@@ -3,11 +3,13 @@
   flex-direction: column;
 align-items: center;
 margin-top: 20px;
+padding: 6px;
 }  
 
 .box {
   max-width: 800px;
   width: 100%;
+padding: 6px;
 }
 
 .containerLInk {
@@ -19,7 +21,6 @@ align-items: center;
   justify-content: space-between;
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
 }
-
 
 .textContent {
   flex: 1;

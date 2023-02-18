@@ -37,11 +37,11 @@ function App() {
       description: "Layouts e material gráfico",
       color: "#dd4a83",
       icon: Icon.DribbbleLogo,
-      url: "https://google.com",
+      url: "https://dribbble.com/cleisoncarlos",
     },
     {
       title: "Twitch",
-      description: "As vezes posto video de games",
+      description: "As vezes posto videos de games",
       color: "#8a43f2",
       icon: Icon.TwitchLogo,
       url: "https://www.twitch.tv/cleisoncarlos",
@@ -62,7 +62,7 @@ function App() {
     },
     {
       title: "Goole Play",
-      description: "Em breve lançarei mais aplicativos para download",
+      description: "Em breve lançarei mais apps ",
       color: "#3e687a",
       icon: Icon.GooglePlayLogo,
       url: "https://play.google.com/store/apps/developer?id=Cleison+Carlos",
@@ -72,7 +72,7 @@ function App() {
       description: "Palestras / Seminários / Apresentações / Cursos",
       color: "#e08a25",
       icon: Icon.ProjectorScreenChart,
-      url: "https://google.com",
+      url: "https://pt.slideshare.net/CleisonCarlos2",
     },
   ];
 

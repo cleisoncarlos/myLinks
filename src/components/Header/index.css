@@ -1,18 +1,29 @@
 .containerHeader {
     display: flex;  
-    margin-top: 10px;
     margin-bottom: 30px;
     width: 100%;
     color: #fff;
-    align-items: flex-start;
-    
+    align-items: flex-start;    
+}
+
+@media (max-width: 600px)  {
+    .containerHeader {
+        flex-direction: column !important;
+        margin-top: 0px;
+    }
+    .contentImage {   
+  align-self: center
+    }   
+
+    .contentText{
+     text-align: center
+
+    }
 }
 
 .userImage {
     width: 140px;
     height: 140px;
     border-radius: 6px;
-    margin-right: 20px;
-   
+    margin-right: 20px;   
 }
-

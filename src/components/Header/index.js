@@ -6,16 +6,17 @@ export default function Header() {
 
   return (
     <div className="containerHeader">
-      <div>
+      <div className="contentImage">
         <img className="userImage" src={userUrl} alt="User foto" />
       </div>
-      <div>
+      <div className="contentText">
         <h2>Cleison Carlos</h2>
+      
         <small>
-          Meu nome é Cleison Carlos, nascido e Belém, formado em Gestão em
-          Sistemas de Informações com Especialização e Engenharia de Sotware,
-          atualmente trabalho como Desenvolvedor Web com foco em Front-End.
-          Apaixonado de software livre e projetos Open-Source.
+          Mas pode me chamar de <strong>Clei</strong>, nascido e Belém, formado em <strong>Gestão em
+          Sistemas de Informações</strong> com Especialização e <strong>Engenharia de Sotware</strong>,
+          atualmente trabalho como <strong>Desenvolvedor Web/Mobile</strong> com foco em <strong>Front-End</strong>.
+          Apaixonado de software livre e projetos <strong>Open-Source</strong>.
         </small>
       </div>
     </div>
