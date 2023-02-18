@@ -1,17 +1,23 @@
-import './index.css'
+import "./index.css";
 
 export default function Header() {
-
-  const user = 'cleisoncarlos';
+  const user = "cleisoncarlos";
   const userUrl = `https://github.com/${user}.png`;
 
   return (
-    <div className='containerHeader'>
-   <img className="userImage" src={userUrl} alt="User foto"/>  
-        <div>
-            <p><strong><small>Lorem Ipsum Dolor</small></strong></p>
-            <small>Phosphor takes advantage of React Context to make applying a default style to all icons simple. Create an IconContext.Provider at the root of the app (or anywhere above the icons in the tree) and pass in a configuration object with props to be applied by default to all icons:</small>
-        </div>
+    <div className="containerHeader">
+      <div>
+        <img className="userImage" src={userUrl} alt="User foto" />
+      </div>
+      <div>
+        <h2>Cleison Carlos</h2>
+        <small>
+          Meu nome é Cleison Carlos, nascido e Belém, formado em Gestão em
+          Sistemas de Informações com Especialização e Engenharia de Sotware,
+          atualmente trabalho como Desenvolvedor Web com foco em Front-End.
+          Apaixonado de software livre e projetos Open-Source.
+        </small>
+      </div>
     </div>
-  )
+  );
 }

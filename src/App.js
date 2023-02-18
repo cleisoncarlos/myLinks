@@ -1,118 +1,115 @@
-import './App.css';
-import Header from './components/Header'
+import "./App.css";
+import Header from "./components/Header";
 import * as Icon from "phosphor-react";
 
-function App( ) {
-
-
-
-  const data = [{
-      title: 'Facebook',
-      description: 'Lorem Ipsum Dolor',
-      color: '#3b5998',
-      icon: Icon.FacebookLogo,
-      url: 'https://facebook.com'
+function App() {
+  const data = [
+    {
+      title: "cleisoncarlos.com",
+      description: "Meu site pessoal",
+      color: "#96bd02",
+      icon: Icon.At,
+      url: "https://cleisoncarlos.com",
     },
     {
-      title: 'Medium',
-      description: 'Lorem Ipsum Dolor',
-      color: '#00754a',
+      title: "Linkedin",
+      description: "Meu perfil no Linkedin",
+      color: "#0d70b3",
+      icon: Icon.LinkedinLogo,
+      url: "https://www.linkedin.com/in/cleisoncarlos/",
+    },
+    {
+      title: "Medium",
+      description: "Artigos sobre tecnologia",
+      color: "#00a267",
       icon: Icon.MediumLogo,
-      url: 'https://google.com'
+      url: "https://cleisoncarlos.medium.com/",
     },
     {
-      title: 'Github',
-      description: 'Lorem Ipsum Dolor',
-      color: '#982914',
+      title: "Github",
+      description: "Projetos e Códigos",
+      color: "#e44d30",
       icon: Icon.GithubLogo,
-      url: 'https://google.com'
+      url: "https://github.com/cleisoncarlos",
     },
     {
-      title: 'Dribbble',
-      description: 'Lorem Ipsum Dolor',
-      color: '#891944',
+      title: "Dribbble",
+      description: "Layouts e material gráfico",
+      color: "#dd4a83",
       icon: Icon.DribbbleLogo,
-      url: 'https://google.com'
+      url: "https://google.com",
     },
     {
-      title: 'Twitch',
-      description: 'Lorem Ipsum Dolor',
-      color: '#410a91',
+      title: "Twitch",
+      description: "As vezes posto video de games",
+      color: "#8a43f2",
       icon: Icon.TwitchLogo,
-      url: 'https://google.com'
+      url: "https://www.twitch.tv/cleisoncarlos",
     },
     {
-      title: 'Spotify',
-      description: 'Lorem Ipsum Dolor',
-      color: '#159543',
+      title: "Spotify",
+      description: "Músicas de gosto duvidoso",
+      color: "#1dd05d",
       icon: Icon.SpotifyLogo,
-      url: 'https://google.com'
+      url: "https://open.spotify.com/user/clei_42",
     },
     {
-      title: 'Instagram',
-      description: 'Lorem Ipsum Dolor',
-      color: '#83144d',
+      title: "Instagram",
+      description: "Fotografia amadora",
+      color: "#b71b6a",
       icon: Icon.InstagramLogo,
-      url: 'https://google.com'
+      url: "https://www.instagram.com/clei.jpg/",
     },
     {
-      title: 'Goole Play',
-      description: 'Lorem Ipsum Dolor',
-      color: '#3e687a',
+      title: "Goole Play",
+      description: "Em breve lançarei mais aplicativos para download",
+      color: "#3e687a",
       icon: Icon.GooglePlayLogo,
-      url: 'https://google.com'
+      url: "https://play.google.com/store/apps/developer?id=Cleison+Carlos",
     },
     {
-      title: 'Slideshare',
-      description: 'Phosphor takes advantage of React Context',
-      color: '#9e5f17',
+      title: "Slideshare",
+      description: "Palestras / Seminários / Apresentações / Cursos",
+      color: "#e08a25",
       icon: Icon.ProjectorScreenChart,
-      url: 'https://google.com'
+      url: "https://google.com",
     },
   ];
 
+  return (
+    <div className="container">
+      <div className="box">
+        <Header />
 
-  return ( 
-     <div className="container">
-
-     <div className='box'>
-     <Header/>
-
-
-
-
-     {data.map((e, i) => (
-         <a  href = {e.url} target = "_blank" rel = "noopener noreferrer" title = {`Meu link do ${e.title}`} >
-             <div className = 'containerLInk' key={i} style={{background: e.color}}>
-                 <div className = 'icon' >
-       
-
+        {data.map((e, i) => (
+          <a
+            href={e.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            title={`Meu link do ${e.title}`}
+            key={i}
+          >
+            <div className="containerLInk" style={{ background: e.color }}>
+              <div className="icon">
                 <e.icon size={48} weight="duotone" />
-             
-                 </div> 
-                 <div className='textContent'>
-                 
-                 <p><strong>{e.title}</strong></p> 
-                 <p><small>{e.description}</small> </p>
-                 </div> 
+              </div>
+              <div className="textContent">
+                <p>
+                  <strong>{e.title}</strong>
+                </p>
+                <p>
+                  <small>{e.description}</small>
+                </p>
+              </div>
 
-                 <div className='shareIcon' onClick={()=> {}}>
-                   <Icon.Share size = {32} color = "#fff" weight = "duotone" />
-                 </div>
-             </div> 
-         </a>
-
-       ))
-     }
-
-
-     </div>
-     </div>
-
-   
-
-
-
+              <div className="shareIcon" onClick={() => {}}>
+                <Icon.Share size={32} color="#fff" weight="duotone" />
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
   );
 }
 export default App;
