@@ -1,0 +1,13 @@
+.containerHeader {
+    display: flex;  
+    margin-bottom: 30px;
+    width: 100%;
+    
+}
+
+.userImage {
+    width: 140px;
+    height: 140px;
+    border-radius: 6px;
+    margin-right: 20px;
+}
