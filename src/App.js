@@ -73,7 +73,14 @@ function App() {
       color: "#e08a25",
       icon: Icon.ProjectorScreenChart,
       url: "https://pt.slideshare.net/CleisonCarlos2",
-    },
+    },    
+    {
+      title: "Xbox",
+      description: "Conta de usuário Xbox",
+      color: "#107c10",
+      icon: Icon.GameController,
+      url: " https://account.xbox.com/pt-BR/Profile?xr=mebarnav&csrf=JJ6RBKlsAoQUo5uDpG4cbMDCN-OSdHHDeUMbTBYjL73o-tMUKPrrJGDLKAFy9egX1vVkQDitglBN5coJEp1wMGgSIM01&wa=wsignin1.0",
+    },
   ];
 
   return (
