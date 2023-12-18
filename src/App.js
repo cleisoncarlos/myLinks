@@ -85,7 +85,7 @@ function App() {
   title: "Lista de desejos",
   description: "Lista de produtos Amazon",
   color: "#d7ab6f",
-  icon: Icon.AmazonLogo,
+  icon: Icon.ShoppingBagOpen,
   url: "https://www.amazon.com.br/hz/wishlist/ls/2RNFML2WRNXIC?ref_=wl_share",
 }, 
   ];
