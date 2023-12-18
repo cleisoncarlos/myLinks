@@ -81,7 +81,18 @@ function App() {
       icon: Icon.GameController,
       url: " https://account.xbox.com/pt-BR/Profile?xr=mebarnav&csrf=JJ6RBKlsAoQUo5uDpG4cbMDCN-OSdHHDeUMbTBYjL73o-tMUKPrrJGDLKAFy9egX1vVkQDitglBN5coJEp1wMGgSIM01&wa=wsignin1.0",
     },
+{
+  title: "Lista de desejos",
+  description: "Lista de produtos Amazon",
+  color: "#d7ab6f",
+  icon: Icon.AmazonLogo,
+  url: "https://www.amazon.com.br/hz/wishlist/ls/2RNFML2WRNXIC?ref_=wl_share",
+}, 
   ];
+
+
+
+  
 
   return (
     <div className="container">
